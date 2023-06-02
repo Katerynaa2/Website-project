@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detais</title>
+</head>
+<body>    
+    <style>
+        body {
+            text-align: left; 
+            background-image: url("https://pibig.info/uploads/posts/2022-07/1657184576_1-pibig-info-p-nezhnii-fon-odnotonnii-1.png");
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 60px; 
+            margin-left: 20px;  
+        }
+        
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+        }
+        
+        .image-container img {
+            width: 450px;
+            height: 500px;
+        }
+        
+        .image-container p {
+            font-size: 25px;
+            margin-left: 50px;
+            background-color: rgba(94, 3, 67, 0.7);
+            color: white;
+        }
+    </style>
+
+<div class="image-container">
+    <img src="{{ src }}" />
+    <p>{{ description }}</p>    
+    <p>{{ additionalDescription }}</p>
+</div>
+
+</body>

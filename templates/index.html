@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Buquet from Kate</title>
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <style>
+    body {
+      background-image: url("https://pibig.info/uploads/posts/2022-07/1657184576_1-pibig-info-p-nezhnii-fon-odnotonnii-1.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+  </style>
+  <script> 
+    function showContent(sectionId) {
+      var contentElements = document.getElementsByClassName("content");
+      
+      for (var i = 0; i < contentElements.length; i++) {
+        contentElements[i].style.display = "none";
+      }
+      
+      var section = document.getElementById(sectionId);
+      section.style.display = "block";
+    }
+  </script>
+    <script>
+    var images = [
+      {
+        src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4204_111-800x800.jpg",
+        description: "Букет з цукерок Ніжний",
+        additionalDescription: "Виробники: Авторська работа Модель: 4204"
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg",
+        description: "Букет З Цукерок Чарівний",
+        additionalDescription: "Виробники: Авторська работа Модель: 4205 Наявність: В наявності"
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4198_2_buket_iz_konfet_rozy_i_ferrero-800x800.jpg",
+        description: "Букет З Цукерок Весняний",
+        additionalDescription: "Виробники: Авторська работа Модель: 4206 Наявність: В наявності"
+      }, 
+        {
+        src: "https://original-buket.com.ua/image/cache/catalog/2021_new_1_foto/4209_111-800x800.jpg",
+        description: "Букет З Цукерок Стиль",
+        additionalDescription: "Виробники: Авторська работа Модель: 4207 Наявність: В наявності"
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4227_1_Buket_iz_konfet_Kinder_chupa_chups-800x800.jpg",
+        description: "Букет З Цукерок Казковий",
+        additionalDescription: "Виробники: Авторська работа Модель: 4208 Наявність: В наявності"
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2022/4250_1_Buket_iz_konfet_i_cvetov_Romantika-800x800.jpg",
+        description: "Букет З Цукерок Романтика",
+        additionalDescription: "Виробники: Авторська работа Модель: 4209 Наявність: В наявності" 
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4224_1_Buket_iz_konfet_Pleyada_ferrero_rafaello-800x800.jpg",
+        description: "Букет з цукерок Ласкавий",
+        additionalDescription: "Виробники: Авторська работа Модель: 8675 Наявність: В наявності" 
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/data/Konfety_2019/buket-iz-konfet-rozy-i-chay-918-564x564.jpg",
+        description: "Букет З Цукерок Інь Янь",
+        additionalDescription: "Виробники: Авторська работа Модель: 9086  Наявність: В наявності"
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Nabory_2021/3132_buket_klubnika_rozy_1-800x800.jpg",
+        description: "Букет з Цукерок Солодкі емоції", 
+        additionalDescription: "Виробники: Авторська работа Модель: 6737 Наявність: В наявності"
+      }, 
+        {
+        src: "https://original-buket.com.ua/image/cache/catalog/Nabory_2021/3189_1_Podarochnyi_buket_Koral-800x800.jpg",
+        description: "Цукеркова Казка",
+        additionalDescription: "Виробники: Авторська работа Модель: 9898 Наявність: В наявності"
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/data/konpheti_Vladimir/buket-iz-konfet-rozy-korallovaya-roskosh-553-800x800.jpg",
+        description: "Магія Солодощів",
+        additionalDescription: "Виробники: Авторська работа Модель: 3421 Наявність: В наявності"
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4207_11-800x800.jpg",
+        description: "Магія солодощів", 
+        additionalDescription: "Виробники: Авторська работа Модель: 4256 Наявність: В наявності"
+      }, 
+        {
+        src: "https://i0.wp.com/kolibriua.com/wp-content/uploads/2021/03/photo_2022-06-26_21-51-18.jpg?fit=1048%2C1280&ssl=1",
+        description: "Шоколадний аромат",
+        additionalDescription: "Виробники: Авторська работа Модель: 4281 Наявність: В наявності"
+      },
+      {
+        src: "https://static.lepestki.ua/filestorage/products/331/66128/414x400.jpg",
+        description: "Солодке Задоволення",
+        additionalDescription: "Виробники: Авторська работа Модель: 4321 Наявність: В наявності"
+      },
+      {src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlNt7itPE0Hpd7TMpnqZ7WqGJRXql_rkk_tbeYZA2RMT7Y722xXeIDJLH9WYuHwRHHi8&usqp=CAU",
+        description: "Ласкаві Дотики" ,
+        additionalDescription: "Виробники: Авторська работа Модель: 4251 Наявність: В наявності"
+      },
+      {
+        src: "https://idei-dekoru.com/wp-content/uploads/2019/01/85d3042409d20c8f9501d1fa91d23740.jpg",
+        description: "",
+        additionalDescription: "Виробники: Авторська работа Модель: 4291 Наявність: В наявності"
+      },
+      {src: "https://idei-dekoru.com/wp-content/uploads/2019/01/34838bd3381946959af1d2f362478258.jpg",
+        description: "Цукерковий рай", 
+        additionalDescription: "Виробники: Авторська работа Модель: 3201 Наявність: В наявності"
+      }, 
+        {
+        src: "https://idei-dekoru.com/wp-content/uploads/2019/01/bbae0c462a5b2aaf63c8eb3a76b4b205.jpg",
+        description: "Солодке почуття",
+        additionalDescription: "Виробники: Авторська работа Модель: 5205 Наявність: В наявності"
+      },
+      {
+        src: "https://idei-dekoru.com/wp-content/uploads/2019/01/da00b7022a841f9cd7483b5cdbfa6abd.jpg",
+        description: "Солодка гастрономія",
+        additionalDescription: "Виробники: Авторська работа Модель: 4891 Наявність: В наявності"
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2019/4187_2_Buket_iz_konfet_Rozt_11_koral_laim-328x328.jpg",
+        description: "Букет З Цукерок ", 
+        additionalDescription: "Виробники: Авторська работа Модель: 4301 Наявність: В наявності"
+      },
+        {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4228_2_Buket_iz_konfet_Rafaello_45-328x328.jpg",
+        description: "Солодкі Фантазії", 
+        additionalDescription: "Виробники: Авторська работа Модель: 8201 Наявність: В наявності"
+      },
+      {
+        src: "https://original-buket.com.ua/image/cache/data/konpheti_2017/buket-iz-konfet-rozy-9-rafaello--12547-328x328.JPG",
+        description: "Ніжна Солодкість",
+        additionalDescription: "Виробники: Авторська работа Модель: 4282 Наявність: В наявності"
+      },
+      {src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4199_1_Buket_iz_konfet_Ferero_rafaelo_27-800x800.jpg",
+        description: "Солодке Задоволення",
+        additionalDescription: "Виробники: Авторська работа Модель: 4901 Наявність: В наявності" 
+      }, 
+        {
+        src: "https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4219_1_Buket_iz_konfet_Rozy_15_v_korzine_belo_rozovye-328x328.jpg",
+        description: "Букет З Цукерок Троянди",
+        additionalDescription: "Виробники: Авторська работа Модель: 5721 Наявність: В наявності"
+      }
+    ];
+    
+    
+    function openImage(index) {
+      var image = images[index];
+      var imageUrl = image.src;
+      var description = image.description;
+      var additionalDescription = image.additionalDescription;
+
+      window.open(`/details?src=${image.src}&description=${image.description}`, "_blank");
+
+      window.addEventListener('DOMContentLoaded', function() {
+  showContent("section1", "Виробники: Авторская работа Модель: 4204 Наявність: В наличии");
+});
+  }
+  function openImage(index) {
+  var image = images[index];
+  var imageUrl = image.src;
+  var description = image.description;
+  var additionalDescription = image.additionalDescription;
+
+  window.open(`/details?src=${imageUrl}&description=${description}&additionalDescription=${additionalDescription}`, "_blank");
+
+  showContent("section1", additionalDescription);
+}
+
+function showContent(sectionId, additionalDescription) {
+  var contentElements = document.getElementsByClassName("content");
+
+  for (var i = 0; i < contentElements.length; i++) {
+    contentElements[i].style.display = "none";
+  }
+
+  var section = document.getElementById(sectionId);
+  section.style.display = "block";
+
+  var additionalDescriptionElement = document.getElementById("additionalDescription");
+  additionalDescriptionElement.textContent = additionalDescription;
+} 
+  </script>
+    
+</head>
+<body>
+  <header>
+    <h1><h1 class="title">ВUQUET FROM KATE</h1>
+    </h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showContent('home')">Головна</a></li>
+      <li><a href="#" onclick="showContent('about')">Про нас</a></li>
+      <li><a href="#" onclick="showContent('contacts')">Контакти</a></li>
+      <li class="catalog-link"><a href="#">Каталог</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div id="catalog-modal" style="display: none;">
+  <h2>Каталог товарів</h2>
+  <ul>
+    <a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4204_111-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%B7%20%D1%86%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%9D%D1%96%D0%B6%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204204"> Букет "Ніжний"</a>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Чарівний"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Солодка гастрономія"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Солодка насолодa "</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Солодкі Емоції"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Казковий"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Цукерковий рай "</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Солодке почуття"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Весняний"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Ласкавий"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Магія Солодощів"</a></li>
+    <li><a href="http://127.0.0.1:5000/details?src=https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg&description=%D0%91%D1%83%D0%BA%D0%B5%D1%82%20%D0%97%20%D0%A6%D1%83%D0%BA%D0%B5%D1%80%D0%BE%D0%BA%20%D0%A7%D0%B0%D1%80%D1%96%D0%B2%D0%BD%D0%B8%D0%B9&additionalDescription=%D0%92%D0%B8%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D0%BA%D0%B8:%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D0%9C%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C:%204205%20%D0%9D%D0%B0%D1%8F%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C:%20%D0%92%20%D0%BD%D0%B0%D1%8F%D0%B2%D0%BD%D0%BE%D1%81%D1%82"> Букет "Сoлодка насолода"</a></li>
+
+  </ul>
+  <button id="close-modal">Закрити</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $('.catalog-link').click(function(event) {
+    event.preventDefault();
+    var catalogModal = $('#catalog-modal');
+
+    if (catalogModal.is(':visible')) {
+      catalogModal.fadeOut();
+    } else {
+      catalogModal.fadeIn();
+    }
+  });
+
+  $('#close-modal').click(function() {
+    $('#catalog-modal').fadeOut();
+  });
+</script>
+
+
+<section id="home" class="content">
+  <h2>Солодкі Букети: Магія Квітів зі Смаком Радості!</h2>
+  <div class="gallery-item">
+   <div class="gallery">
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4204_111-800x800.jpg" alt="Фото 1" onclick="openImage(0)">
+      <span>Букет З Цукерок Ніжний</span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4197_11-800x800.jpg" alt="Фото 2" onclick="openImage(1)">
+      <span>Букет З Цукерок Чарівний
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4198_2_buket_iz_konfet_rozy_i_ferrero-800x800.jpg" alt="Фото 3" onclick="openImage(2)">
+      <span>Букет З Цукерок Весняний
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/2021_new_1_foto/4209_111-800x800.jpg" alt="Фото 4" onclick="openImage(3)">
+      <span>Букет З Цукерок Стиль
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4227_1_Buket_iz_konfet_Kinder_chupa_chups-800x800.jpg" alt="Фото 5" onclick="openImage(4)">
+      <span>Букет З Цукерок Казковий
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2022/4250_1_Buket_iz_konfet_i_cvetov_Romantika-800x800.jpg" alt="Фото 6" onclick="openImage(5)">
+      <span>Букет З Цукерок Романтика
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4224_1_Buket_iz_konfet_Pleyada_ferrero_rafaello-800x800.jpg" alt="Фото 7" onclick="openImage(6)">
+      <span>Букет з цукерок Ласкавий
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/data/Konfety_2019/buket-iz-konfet-rozy-i-chay-918-564x564.jpg" alt="Фото 8" onclick="openImage(7)">
+      <span>Букет З Цукерок Інь Янь
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Nabory_2021/3132_buket_klubnika_rozy_1-800x800.jpg" alt="Фото 9" onclick="openImage(8)">
+      <span>Солодкі Емоції
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Nabory_2021/3189_1_Podarochnyi_buket_Koral-800x800.jpg" alt="Фото 10" onclick="openImage(9)">
+      <span>Цукеркова Казка
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/data/konpheti_Vladimir/buket-iz-konfet-rozy-korallovaya-roskosh-553-800x800.jpg" alt="Фото 11" onclick="openImage(10)">
+      <span>Магія Солодощів
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4207_11-800x800.jpg" alt="Фото 12" onclick="openImage(11)">
+      <span>Магія солодощів
+      </span>
+    </div>
+    <div>
+      <img src="https://i0.wp.com/kolibriua.com/wp-content/uploads/2021/03/photo_2022-06-26_21-51-18.jpg?fit=1048%2C1280&ssl=1" alt="Фото 13" onclick="openImage(12)">
+      <span>Шоколадний аромат
+      </span>
+    </div>
+    <div>
+      <img src="https://static.lepestki.ua/filestorage/products/331/66128/414x400.jpg" alt="Фото 14" onclick="openImage(13)">
+      <span>Солодке Задоволення
+      </span>
+    </div>
+    <div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlNt7itPE0Hpd7TMpnqZ7WqGJRXql_rkk_tbeYZA2RMT7Y722xXeIDJLH9WYuHwRHHi8&usqp=CAU" alt="Фото 15" onclick="openImage(14)">
+      <span>Ласкаві Дотики
+      </span>
+    </div>
+    <div>
+      <img src="https://idei-dekoru.com/wp-content/uploads/2019/01/85d3042409d20c8f9501d1fa91d23740.jpg" alt="Фото 16" onclick="openImage(15)">
+      <span>Цукерковий рай
+      </span>
+    </div>
+    <div>
+      <img src="https://idei-dekoru.com/wp-content/uploads/2019/01/34838bd3381946959af1d2f362478258.jpg" alt="Фото 17" onclick="openImage(16)">
+      <span>Солодке почуття
+      </span>
+    </div>
+    <div>
+      <img src="https://idei-dekoru.com/wp-content/uploads/2019/01/bbae0c462a5b2aaf63c8eb3a76b4b205.jpg" alt="Фото 18" onclick="openImage(17)">
+      <span>Солодка гастрономія
+      </span>
+    </div>
+    <div>
+      <img src="https://idei-dekoru.com/wp-content/uploads/2019/01/da00b7022a841f9cd7483b5cdbfa6abd.jpg" alt="Фото 19" onclick="openImage(18)">
+      <span>Солодка насолода
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2019/4187_2_Buket_iz_konfet_Rozt_11_koral_laim-328x328.jpg" alt="Фото 20" onclick="openImage(19)">
+      <span>Букет З Цукерок 
+      </span>
+    </div>
+    <div>
+      <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4228_2_Buket_iz_konfet_Rafaello_45-328x328.jpg" alt="Фото 21" onclick="openImage(20)">
+      <span>Солодкі Фантазії
+      </div>
+      <div>
+        <img src="https://original-buket.com.ua/image/cache/data/konpheti_2017/buket-iz-konfet-rozy-9-rafaello--12547-328x328.JPG" alt="Фото 22" onclick="openImage(21)">
+        <span>Ніжна Солодкість
+        </span>
+      </div>
+      <div>
+        <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2020/4199_1_Buket_iz_konfet_Ferero_rafaelo_27-800x800.jpg" alt="Фото 23" onclick="openImage(22)">
+        <span>Солодке Задоволення
+        </span>
+      </div>
+      <div>
+        <img src="https://original-buket.com.ua/image/cache/catalog/Konfety_2021/4219_1_Buket_iz_konfet_Rozy_15_v_korzine_belo_rozovye-328x328.jpg" alt="Фото 24" onclick="openImage(23)">
+        <span>Букет З Цукерок Троянди
+</span>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="content" style="display: none; ">
+  <h2>Про нас</h2>
+    <p>Наша мрія:
+      Усе почалося з мрії - мрії про створення чогось виняткового, що поєднує красу та смак. Ми завжди віріли в силу творчості та відчували внутрішню пристрасть до того, щоб розкрити нові грані солодких букетів.
+    </p>
+    <p>Наша унікальність:
+      Ми прагнемо до того, щоб кожен наш солодкий букет був справжнім шедевром. Використовуючи тільки найкращі інгредієнти, ми творимо неповторні композиції, де квіти оживають у гармонії з ніжними смаками солодощів. Кожен букет - це унікальний витвір мистецтва, створений з любов'ю і майстерністю.
+    </p>
+    <p>Наше портфоліо:
+      У нас кожен букет - це маленьке творіння, яке набуває життя в руках наших майстрів. Ми з гордістю представляємо вам наше портфоліо, де ви зможете побачити широкий спектр наших робіт. Від квіткових каскадів до елегантних композицій - кожен букет виражає неповторну красу і розкіш.
+    </p>
+    <p>Наші цінності:
+      Ми покладаємо особливий акцент на індивідуальний підхід до кожного клієнта. Ваші побажання і бажання є нашим натхненням. Ми віддаємо перевагу високій якості і надійності, завжди намагаємося перевершити очікування і створити дивовижні моменти радості для вас і ваших близьких.
+    </p>
+    <p>Наша місія:
+      Наша місія полягає в тому, щоб дарувати незабутні емоції та здивування через наші солодкі букети. Ми віримо, що кожна подія заслуговує на особливий подарунок, що виражає ваші почуття та увагу. Наші букети створені для того, щоб робити моменти ще більш незабутніми і викликати посмішки на обличчі отримувача.
+    </p>
+    <p>Наш підхід:
+      Ми розуміємо, що кожен клієнт унікальний, і саме тому ми прислухаємося до вашого бажання і потреб. Наша команда експертів з любов'ю створить для вас ідеальний солодкий букет, враховуючи ваші переваги і особливості. Ми забезпечуємо, що кожна деталь буде на своєму місці, а кожен букет буде вражати своєю неповторною красою та смаком.
+    </p>
+    <p>Ласкаво просимо в світ солодких букетів, де ми перетворюємо кожен момент в незабутню подорож смаку та естетики. Дозвольте нам зробити ваші святкові миті ще більш вишуканими та особливими.</p>
+</section>
+<section id="contacts" class="content" style="display: none;">
+  <h2>Контакти</h2>
+  <p>Адреса: вул. Цукеркова, 1,</p>
+  <p>Email: info@buket-vod-kate.com</p>
+  <p>Замовлення можна зробити за номером телефону: +380688407977</p>
+</section>
+</body>
+</html>

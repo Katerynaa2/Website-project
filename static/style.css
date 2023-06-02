@@ -1,0 +1,162 @@
+/* Загальні стилі */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стилі для заголовка */
+  
+  header {
+    background-image: url("https://shostka.info/wp-content/uploads/2021/02/55-980x551.jpg");
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Стилі для навігації */
+  
+  nav {
+    background-color: hsl(323, 53%, 75%);
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* Стилі для секції */
+  
+  section {
+    padding: 20px;
+  }
+  
+  /* Стилі для підвалу */
+  
+  footer {
+    background-color: #f708df;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .gallery div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .gallery div {
+    position: relative;
+  }
+  
+  .gallery span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(249, 74, 197, 0.7);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  .gallery div:hover span {
+    display: block;
+  }
+  
+  .title {
+    color: #f4f0f3;
+  }
+  h2 {
+    color: #9c108c; 
+  }
+  
+  
+  nav {
+    background-color: hsl(323, 53%, 75%);
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .catalog-link {
+    float: right;
+  }
+  
+  nav ul li:not(.catalog-link) {
+    float: left;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #catalog-modal {
+    position: fixed;
+    top: 10;
+    width: 200px;
+    height: 100%;
+    background-color: hsl(323, 53%, 75%);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.3s ease; 
+    z-index: 9999;
+    }
+      
+    #catalog-modal.active {
+      left: 0; 
+    }
+    
+    #close-modal {
+      display: block;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+      
+    
+  
